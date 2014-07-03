@@ -1,4 +1,4 @@
-HarvardClassFinder
+Theharvardclassfinder
 ==================
 This is a project that stemmed from my unhappiness with the tools available
 for students at Harvard to browse for classes. While the school website has a 
