@@ -1,0 +1,162 @@
+/*
+ * CSS for Harvard Class Finder
+ * Nicholas Mahlangu
+ */
+
+/* body */
+ body
+ {
+   text-align: center;
+   background-color: #ffffff;
+ }
+
+ p, ul{display: inline;}
+ li {margin-left: 20px;}
+
+ /* black box under logo */
+ #box
+ {
+   text-align: center;
+   font-size: 20px;
+   line-height: 40px;
+   height: 40px;
+   width: 1000px;
+   background-color: #000000;
+   margin: 0 auto;
+   color: #ffffff;
+   font-family: "Helvetica Neue";
+   font-weight: 100;
+ }
+
+ /* table of links under black box */
+ #links
+ {
+   font-family: "Helvetica Neue";
+   font-weight: 200;
+   border-spacing: 20px;
+ }
+
+ /* for hyperlinks */
+a:link {color: #a51c30; text-decoration: none;}
+ a:visited {color: #a51c30;}
+ a:hover {color: #0000ff;}
+
+/* form input table */
+ #input
+ {
+   border: 0;
+   border-spacing: 0;
+   text-align: center;
+   font-family: "Helvetica Neue";
+   font-weight: 200;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+/* initial search info */
+#hint
+{
+  font-family: "Helvetica Neue";
+  font-weight: 200;
+}
+
+/* red info header table */
+#info_header
+{
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  background-color: #a51c30;
+  text-align: left;
+  width: 600px;
+  border: 1px solid black;
+}
+
+/* box with usage info */
+#info_box
+{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 518px;
+  height: 130px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: "Helvetica Neue";
+  font-weight: 200;
+  text-align: left;
+  font-size: 95%;
+}
+
+/* list elements in info box */
+.info_entry
+{
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ /* upper table that has column names */
+#upper_table
+{
+  margin-left: auto;
+  margin-right: auto; 
+  font-family: "Helvetica Neue";
+   font-weight: 200;
+   color: white;
+   background-color: #a51c30;
+   border: 1px solid black;
+    border-collapse: collapse; 
+   width: 997px;
+}
+
+/* only row in upper table */
+.upper_table_row{border-left: 1px solid black;}
+
+/* lower table where all class data is displayed */
+#lower_table
+{
+  margin-left: auto;
+  margin-right: auto; 
+  font-family: "Helvetica Neue";
+   font-weight: 200;
+   border-collapse: collapse;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+   border-bottom: 1px solid black;
+   width: 997px;
+}
+
+/*  borders for lower table <td> elements*/
+.lower_table_row
+{
+  height: 45px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* widths for lower table <td> elements */
+#ranking{width: 50px;}
+#number{width: 160px;}
+#title{width: 250px;}
+#catalog{width: 87px;}
+#overall{width: 87px;}
+#difficulty{width: 87px;}
+#workload{width: 87px;}
+#recommendations{width: 87px;}
+
+/* CSS is for error messages */
+#output
+{
+  font-family: "Helvetica neue";
+  font-weight: 200;
+  width: 997px;
+  /*height: 400px;*/
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+}

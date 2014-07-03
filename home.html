@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- browser tab image -->
+    <link rel="shortcut icon" href="img/title_logo.png" type="image/png">
+    <!-- CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Harvard Class Finder - Home</title>
+  </head>
+  <body>
+    <!-- red logo atop page -->
+    <div id="logo">
+      <a href="home.html"><img src="img/logo_6.png" width="1000" height="100"></a>
+    </div>
+    <!-- description under logo -->
+    <div id="box">
+      [ Home ]
+    </div>
+    <!-- links to other class related website -->
+    <div>
+      <table id="links" align="center">
+        <tr>
+          <td>Useful links:</td>
+          <td><a href="faq.html">About / FAQ</a></td>
+          <td><a href="http://www.my.harvard.edu">My Harvard</a></td>
+                  <td><a href="https://webapps.fas.harvard.edu/course_evaluation_reports/fas/list?">Harvard Q</a></td>
+                  <td><a href="https://courses.cs50.net/">CS50 Courses</a></td>
+                 </tr>
+      </table>
+    </div>
+    <!-- input form -->
+    <div>
+      <form id="form" action="php/backend.php" method="post">
+        <table id="input" cellpadding="4">
+          <tr>
+            <!-- first menu (how to rank) -->
+            <td> 
+              <select id="ranking_scheme">
+                <option value="default">Rank Classes By:</option>
+                <option value="number">Course Number</option>
+                <option value="CourseOverall">Overall Q</option>
+                <option value="Difficulty">Difficulty</option>
+                <option value="Workload">Workload</option>
+                <option value="WouldYouRecommend">Peer Recommendation  </option>
+              </select>
+            </td>
+            <!-- second menu (fields of study) -->
+            <td>
+              <select id="fields_of_study">
+                <option value="default">Fields of Study:</option>
+                <option value="ALL">All Fields of Study</option> 
+                <option value="AFRAMER">African and African American Studies</option>
+                <option value="AKKAD">Akkadian</option>
+                <option value="AM-CIV">American Civilization</option>
+                <option value="AMSTUDIES">American Studies</option>
+                <option value="ANE">Ancient Near East</option>
+                <option value="ANTHRO">Anthropology</option>
+                <option value="APCOMP">Applied Computation</option>
+                <option value="APMTH">Applied Mathematics</option>
+                <option value="APPHY">Applied Physics</option>
+                <option value="ARABIC">Arabic</option>
+                <option value="ARAMAIC">Aramaic</option>
+                <option value="ARMEN">Armenian</option>
+                <option value="ARMENST">Armenian Studies</option>
+                <option value="ASTRON">Astronomy</option>
+                <option value="BBS">BBS</option>
+                <option value="BCMP">BCMP</option>
+                <option value="BCS">BCS</option>
+                <option value="BSDM">Biological Sciences in Dental Medicine</option>
+                <option value="BE">Biomedical Engineering</option>
+                <option value="BIOPHYS">Biophysics</option>
+                <option value="BIOSTAT">Biostatistics</option>
+                <option value="BPH">BPH</option>
+                <option value="BUSSTUD">Business Studies</option>
+                <option value="CATALAN">Catalan</option>
+                <option value="CELLBIO">Cell Biology</option>
+                <option value="CELTIC">Celtic</option>
+                <option value="CPB">Chemical and Physical Biology</option>
+                <option value="CHEMBIO">Chemical Biology</option>
+                <option value="CHEM">Chemistry</option>
+                <option value="CHNSE">Chinese</option>
+                <option value="CHNSHIS">Chinese History</option>
+                <option value="CHNSLIT">Chinese Literature</option>
+                <option value="CLASARCH">Classical Archaeology</option>
+                <option value="CLAS-HEB">Classical Hebrew</option>
+                <option value="CLASPHIL">Classical Philology</option>
+                <option value="CLAS-STDY">Classical Studies</option>
+                <option value="CLASSIC">Classics</option>
+                <option value="COMPLIT">Comparative Literature</option>
+                <option value="COMPSCI">Computer Science</option>
+                <option value="CULTR&BLF">Culture and Belief</option>
+                <option value="CZCH">Czech</option>
+                <option value="DESIGN">Design</option>
+                <option value="DRAMA">Dramatic Arts</option>
+                <option value="DRB">DRB</option>
+                <option value="E-PSCI">Earth and Planetary Sciences</option>
+                <option value="EABS">East Asian Buddhist Studies</option>
+                <option value="EAFM">East Asian Film and Media Studies</option>
+                <option value="EASTD">East Asian Studies</option>
+                <option value="ECON">Economics</option>
+                <option value="EGYPTIAN">Egyptian</option>
+                <option value="E&M-REASON">Empirical and Mathematical Reasoning</option>
+                <option value="ENG-SCI">Engineering Sciences</option>
+                <option value="ENGLISH">English</option>
+                <option value="ESPP">Environmental Science and Public Policy</option>
+                <option value="ETH-REASON">Ethical Reasoning</option>
+                <option value="EXPOS">Expository Writing</option>
+                <option value="EDC">Extra-Departmental Courses</option>
+                <option value="FOLKMYTH">Folklore and Mythology</option>
+                <option value="FRENCH">French</option>
+                <option value="FRSEMR">Freshman Seminar</option>i
+                <option value="GENETIC">Genetics</option>
+                <option value="GERMAN">German</option>
+                <option value="GERMPHIL">Germanic Philology</option>
+                <option value="GERM-STD">Germanic Studies</option>
+                <option value="GIKUYU">Gikuyu</option>
+                <option value="GHHP">Global Health and Health Policy</option>
+                <option value="GOV">Government</option>
+                <option value="GREEK">Greek</option>
+                <option value="HBTM">HBTM</option>
+                <option value="HLTHPOL">Health Policy</option>
+                <option value="HEBREW">Hebrew</option>
+                <option value="HIST">History</option>
+                <option value="HIST-LIT">History and Literature</option>
+                <option value="HAA">History of Art and Architecture</option>
+                <option value="HISTSCI">History of Science</option>
+                <option value="HEB">Human Evolutionary Biology</option>
+                <option value="HUMAN">Humanities</option>
+                <option value="IMUNOL">Immunology</option>
+                <option value="IRANIAN">Iranian</option>
+                <option value="IRISH">Irish</option>
+                <option value="ISLAMCIV">Islamic Civilizations</option>
+                <option value="ITAL">Italian</option>
+                <option value="JAPAN">Japanese</option>
+                <option value="JAPNHIST">Japanese History</option>
+                <option value="JAPNLIT">Japanese Literature</option>
+                <option value="JEWISHST">Jewish Studies</option>
+                <option value="KOREAN">Korean</option>
+                <option value="KORHIST">Korean History</option>
+                <option value="KORLIT">Korean Literature</option>
+                <option value="LATIN">Latin</option>
+                <option value="LAT-STD">Latin American Studies</option>
+                <option value="LPS">Life and Physical Sciences</option>
+                <option value="LIFESCI">Life Sciences</option>
+                <option value="LING">Linguistics</option>
+                <option value="LITERATURE">Literature</option>
+                <option value="MANCHU">Manchu</option>
+                <option value="MATH">Mathematics</option>
+                <option value="MCB">MCB</option>
+                <option value="MED-SCI">Medical Sciences</option>
+                <option value="MEDGREEK">Medieval Greek</option>
+                <option value="MEDLATIN">Medieval Latin</option>
+                <option value="MEDVLSTD">Medieval Studies</option>
+                <option value="MICROBI">Microbiology</option>
+                <option value="MES">Middle Eastern Studies</option>
+                <option value="MBB">Mind, Brain, and Behavior</option>
+                <option value="MODGRK">Modern Greek</option>
+                <option value="MOD-HEB">Modern Hebrew</option>
+                <option value="MONGOLN">Mongolian</option>
+                <option value="MUSIC">Music</option>
+                <option value="NEC">Near Eastern Civilizations</option>
+                <option value="NEP">Nepali</option>
+                <option value="NEUROBIO">Neurobiology</option>
+                <option value="OEB">OEB</option>
+                <option value="PAL">Pali</option>
+                <option value="PATHOL">Pathology</option>
+                <option value="PERSIAN">Persian</option>
+                <option value="PHIL">Philosophy</option>
+                <option value="PHYSCI">Physical Sciences</option>
+                <option value="PHYSICS">Physics</option>
+                <option value="PLSH">Polish</option>
+                <option value="PORTUG">Portuguese</option>
+                <option value="PSY">Psychology</option>
+                <option value="RSEA">Regional Studies - East Asia</option>
+                <option value="RSRA">Regional Studies - Russia, Eastern Europe, and Central Asia</option>
+                <option value="RELIGION">Religion</option>
+                <option value="ROM-LANG">Romance Languages</option>
+                <option value="ROM-STD">Romance Studies</option>
+                <option value="RUSS">Russian</option>
+                <option value="SANSKRIT">Sanskrit</option>
+                <option value="SCAND">Scandinavian</option>
+                <option value="SCI-LIVSYS">Science of Living Systems</option>
+                <option value="SCI-PHYUNV">Science of the Physical Universe</option>
+                <option value="SCOTGAELIC">Scottish Gaelic</option>
+                <option value="SCRB">SCRB</option>
+                <option value="SEMPHIL">Semitic Philology</option>
+                <option value="SHBT">SHBT</option>
+                <option value="SLAVIC">Slavic</option>
+                <option value="SPOL">Social Policy</option>
+                <option value="SOC-STD">Social Studies</option>
+                <option value="SOC-WORLD">Societies of the World</option>
+                <option value="SOCIOL">Sociology</option>
+                <option value="SAS">South Asian Studies</option>
+                <option value="SPANSH">Spanish</option>
+                <option value="SPC-CONC">Special Concentrations</option>
+                <option value="STAT">Statistics</option>
+                <option value="WOMGEN">Studies of Women, Gender, and Sexuality</option>
+                <option value="SUMERIAN">Sumerian</option>
+                <option value="SWAHILI">Swahili</option>
+                <option value="SWEDISH">Swedish</option>
+                <option value="SYSTBIO">Systems Biology</option>
+                <option value="TAM">Tamil</option>
+                <option value="THI">Thai</option>
+                <option value="MODMIDEAST">The Modern Middle East</option>
+                <option value="TIBET">Tibetan</option>
+                <option value="TIBHIST">Tibetan History</option>
+                <option value="TURKISH">Turkish</option>
+                <option value="TWI">Twi</option>
+                <option value="UKRAN">Ukrainian</option>
+                <option value="US-WORLD">United States in the World</option>
+                <option value="URD">Urdu</option>
+                <option value="UYGHUR">Uyghur</option>
+                <option value="VIETNAM">Vietnamese</option>
+                <option value="VIROLOGY">Virology</option>
+                <option value="VES">Visual and Environmental Studies</option>
+                <option value="WELSH">Welsh</option>
+                <option value="HSEMR-WI">Winthrop</option>
+                <option value="YIDDISH">Yiddish</option>
+                <option value="YORUBA">Yorub</option>
+              </select>
+            </td>
+            <!-- third menu (how to display)-->
+            <td>
+               <select id="display">
+                <option value="default">Order:</option>
+                <option value="lowest">Lowest First</option>
+                <option value="highest">Highest First</option>
+              </select>
+            </td>
+            <!-- fourth menu (terms) -->
+            <td>
+              <select id="terms">
+                <option value="default">Terms:</option>
+                <option value="both">Both</option>
+                <option value="fall">Fall</option>
+                <option value="spring">Spring</option>
+              </select>
+            </td>
+            <!-- fifth menu (data) -->
+            <td>
+              <select id="data_type">
+                <option value="default">Data:</option>
+                <option value="most_recent">Most Recent</option>
+                <option value="average">Average (all years)</option>
+              </select>
+            </td>
+            <!-- submit button -->
+            <td>
+              <input type="submit" value="Find classes!">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    </br></br>
+    <!-- where data table will appear -->
+    <div id="hint">
+      <table id="info_header">
+        <tr>
+          <td>[ Info ]</td>
+        </tr>
+      </table>
+    </div>
+    <div id="info_box">
+      <ul>
+        <li>To browse classes select an option from each drop down menu
+          and click the button labeled <i>Find classes!</i></li>
+        <li>
+          Once a list of classes loads, click a class's course number to find out
+          more about it (e.g. professor, meeting times, Q comments, etc.)
+        </li>
+        <li>Questions? Head over to <a href="faq.html">About / FAQ</a> to learn more.
+      </ul>
+    </div>
+    <div id="output">
+        
+    </div>
+  </body>
+  <!-- javascript -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+  <script src="js/query.js"></script>
+</html>

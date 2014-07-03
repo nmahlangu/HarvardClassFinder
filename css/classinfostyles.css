@@ -1,0 +1,349 @@
+
+ /*
+  * CSS for class pages on the Harvard Class Finder
+  * Nicholas Mahlangu
+  */
+
+/* general elements */
+p, ul{display: inline;}
+li{margin-left: 20px;}
+
+/* body */
+ body
+ {
+  text-align: center;
+  background-color: #ffffff;
+ }
+
+ /* black box under logo */
+ #box
+ {
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  height: 40px;
+  width: 1000px;
+  background-color: #000000;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: "Helvetica Neue";
+  font-weight: 100;
+ }
+
+ /* table of links under black box */
+ #links
+ {
+  font-family: "Helvetica Neue";
+  font-weight: 200;
+  border-spacing: 20px;
+ }
+
+ /* for hyperlinks */
+a:link {color: #a51c30; text-decoration: none;}
+a:visited {color: #a51c30;}
+a:hover {color: #0000ff;}
+
+/* for all the red bars that have info */
+.headers
+{
+  font-family: "Helvetica Neue";
+  font-weight: 200;
+  color: #ffffff;
+  background-color: #a51c30;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid black;
+  width: 600px;
+  text-align: left;
+}
+
+/* box labeled Course Number */
+#course_number_box
+{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 558px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+
+/* text in box labeled Course */
+#course_number
+{
+  font-weight: 500;
+  font-family: "Helvetica Neue";
+  font-size: 180%;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+/* text in box labeled Course Number*/
+#course_title
+{
+  font-weight: 500;
+  font-family: "Helvetica Neue";
+  font-size: 120%;
+  margin: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* box labeled scores */
+#course_scores_table_headers
+{
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  background-color: #000000;
+  font-family: "Helvetica Neue";
+  font-weight: 100;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* black box underneath red bar labeled Scores */
+.course_score_table_headers_entry
+{
+  padding: 0px;
+  margin: 0px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+}
+
+/* actual scores table */
+#course_scores
+{
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 200;
+  font-family: "Helvetica Neue";
+  font-size: 180%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* score entries */
+.course_score_table_entry
+{
+  padding: 0px;
+  margin: 0px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+/* different score entries */
+#catalog_number_score{width: 119px; height: 60px;}
+#overall_q_score{width: 120px;}
+#difficulty_score{width: 120px;}
+#workload_score{width: 120px;}
+#recommendation_score{width: 115px;}
+
+/* different score name entries */
+#catalog_number{width: 119px;}
+#overall_q{width: 120px;}
+#difficulty{width: 120px;}
+#workload{width: 120px;}
+#recommendation{width: 115px;}
+
+/* box containing Instructor and Q Evaluations */
+#other_course_info_header
+{
+  margin-right: auto;
+  margin-left: auto;
+  color: #ffffff;
+  background-color: #000000;
+  font-family: "Helvetica Neue";
+  font-weight: 100;
+  border-collapse: collapse;
+}
+
+/* black box under red bar of box labeled Other Info*/
+.other_course_info_header
+{
+  padding: 0px;
+  margin: 0px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  text-align: center;
+}
+
+/* custom widths for other info box data */
+#course_instructor_header{width: 299px;}
+#course_student_responses{width: 300px;}
+
+/* contains actual data for other info */
+#other_course_info 
+{
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  font-family: "Helvetica Neue";
+  font-weight: 200;
+  font-size: 180%;
+}
+
+/* other info data items */
+.other_course_info_entry
+{
+  padding: 0px;
+  margin: 0px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 10px;
+}
+
+/* custom widths for info box data entries */
+#other_course_info_instructor{width: 298px;}
+#other_course_info_responses{width: 299px;}
+
+/* miscellaneous info box */
+#misc_info
+{
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Helvetica Neue";
+  border-collapse: collapse;
+}
+
+/* for left table entries in misc box */
+.left_misc_entry
+{
+  font-weight: 100;
+  padding: 0px;
+  margin: 0px;
+  color: #ffffff;
+  background-color: #000000;
+  width: 200px;
+  border-bottom: 1px solid white;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  border-left: 1px solid black;
+  height: auto;
+  text-align: center;
+}
+
+/* for right table entries in misc box */
+.right_misc_entry
+{
+  font-weight: 200;
+  padding: 0px;
+  margin: 0px;
+  width: 368px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* box labeled Description */
+#course_description_box
+{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 528px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 7px;
+  padding-bottom: 9px;
+}
+
+/* text in box labeled description */
+#course_description
+{
+  font-weight: 200;
+  font-family: "Helvetica Neue";
+  font-size: 90%;
+  margin: 0px;
+}
+
+/* box labeled Notes */
+#course_notes_box
+{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 528px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 7px;
+  padding-bottom: 9px;
+}
+
+/* text in box labeled Notes */
+#course_notes
+{
+  font-weight: 200;
+  font-family: "Helvetica Neue";
+  font-size: 90%;
+  margin: 0px;
+}
+
+/* error message - box that's labeled Message */
+#error_message
+{
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 528px;
+  height: 120px;
+  padding-left: 35px;
+  padding-right: 35px;  
+}
+
+/* for box containing error message */
+#error_course_number
+{
+  font-weight: 500;
+  font-family: "Helvetica Neue";
+  font-size: 180%;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+/* for words in the box */
+ .error_words
+ {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 95%;
+  text-align: center;
+ }
+
+
+/* name and copyright */
+ #footer
+ {
+  font-family: "Helvetica Neue";
+  font-weight: 200;
+  font-size: 85%;
+ }
