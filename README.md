@@ -7,9 +7,6 @@ decided to write my own tool for it.
 
 Project FAQ
 ===========
-Where can I find Theharvardclassfinder?
-- http://harvardclassfinder.dx.am
-
 What is Theharvardclassfinder?
 - It is an elegant solution to the problem of finding classes to take at
 Harvard. It allows you to browse and rank classes by course number, overall Q 
